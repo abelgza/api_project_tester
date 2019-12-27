@@ -23,13 +23,9 @@ ${json}         {    "topics": "","thumbnail": "/img/tr-3.jpeg","url": "index.ht
 *** Test Cases ***
 POST with valid params to create a new user, can be output to a file
     POST        /events                     ${json}
-    Integer     response status           200
+    Integer     response status           201
     [Teardown]  Output  response body     ${OUTPUTDIR}/new_user.demo.json
 
 POST with valid params to create a new user, can be output to a file
     POST        /messages1                     ${json}
     Integer     response status           404
-
-POST with valid params to create a new user, can be output to a file
-    POST        /message21                     ${json}
-    Integer     response status           200
