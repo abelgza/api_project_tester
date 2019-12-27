@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "27532956-9ac2-4418-be32-3c5ac8098f08",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad979f84-a1e4-408e-b0aa-08c05b7e5646",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3100/events",
+					"host": [
+						"localhost"
+					],
+					"port": "3100"
+				},
+				"description": "test"
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "571eaff9-a55c-4321-9c70-ae14a8deb6b6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3100",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"/"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
