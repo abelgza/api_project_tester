@@ -1,5 +1,5 @@
 *** Settings ***
-Library         REST    http://localhost:3000
+Library         REST    http://localhost:3100
 Documentation   Test data can be read from variables and files.
 ...             Both JSON and Python type systems are supported for inputs.
 ...             Every request creates a so-called instance. Can be `Output`.
