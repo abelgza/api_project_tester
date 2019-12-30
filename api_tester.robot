@@ -28,4 +28,4 @@ POST with valid params to create a new user, can be output to a file
 
 POST with valid params to create a new user, can be output to a file
     POST        /messages1                     ${json}
-    Integer     response status           404
+    Integer     response status           200
